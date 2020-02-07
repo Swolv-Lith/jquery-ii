@@ -1,7 +1,7 @@
 $default-color: #c24e4b;
 $auxiliary-color: #1e2c35;
 $default-white: #FFFFFF;
-$radius: 0.3em;
+$radius: 50px;
 
 @mixin borderRadius {
     -webkit-border-radius: $radius;
