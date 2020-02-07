@@ -31,25 +31,25 @@ header {
 header .container {
   position: relative; }
 
-.menu-opcoes {
+.menu-principal {
   position: absolute;
   right: 0;
   top: -.5em;
   font-size: 1.2em;
   font-weight: lighter; }
 
-.menu-opcoes ul {
+.menu-principal ul {
   padding-left: 0; }
 
-.menu-opcoes li {
+.menu-principal li {
   display: inline-block;
   width: 5em; }
 
-.menu-opcoes a {
+.menu-principal a {
   color: #FFFFFF;
   text-decoration: none; }
 
-.menu-opcoes a:hover {
+.menu-principal a:hover {
   text-decoration: underline; }
 
 /** Destaque **/
@@ -75,10 +75,13 @@ header .container {
 
 .destaque button {
   margin-top: 1em;
+  padding: .6em;
   background: #c24e4b;
   border: 0;
-  padding: .6em;
   font-size: 1.2em;
+  color: #FFFFFF;
+  width: auto;
+  height: auto;
   -webkit-border-radius: 50px;
   border-radius: 50px;
   -webkit-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
@@ -179,10 +182,10 @@ header .container {
 .plano button {
   background: #c24e4b;
   border: 0;
+  font-size: 1.2em;
   color: #FFFFFF;
   width: 210px;
   height: 38px;
-  font-size: 1.2em;
   -webkit-border-radius: 0.3em;
   border-radius: 0.3em;
   -webkit-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
@@ -262,10 +265,10 @@ textarea {
   margin: 0 auto;
   background: #c24e4b;
   border: 0;
+  font-size: 1.2em;
   color: #FFFFFF;
   width: 210px;
   height: 38px;
-  font-size: 1.2em;
   -webkit-border-radius: 0.3em;
   border-radius: 0.3em;
   -webkit-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);

@@ -5,14 +5,39 @@ $default-white: #FFFFFF;
 
 // Mixins usados no meu SASS
 @mixin borderRadius ($radius: 0.3em) {
-    -webkit-border-radius: $radius;
-    border-radius: $radius;
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
 }
 
 @mixin defaultShadow {
-    -webkit-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
 }
+
+@mixin imageReplacement {
+  text-indent: -9999px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+@mixin buttonsSettings ($width: auto, $height: auto){
+  background: $default-color;
+  border: 0;
+  font-size: 1.2em;
+  color: $default-white;
+  width: $width;
+  height: $height;
+}
+
+@mixin positionSettings ($value: 0){
+  top: $value;
+  left: $value;
+  bottom: $value;
+  right: $value;
+  position: absolute;
+  z-index: -1;
+}
+
 /** Geral **/
 body {
   font-family: "Roboto Slab", serif;
@@ -53,7 +78,7 @@ header .container {
   position: relative;
 }
 
-.menu-opcoes {
+.menu-principal {
   position: absolute;
   right: 0;
   top: -.5em;
@@ -61,21 +86,21 @@ header .container {
   font-weight: lighter;
 }
 
-.menu-opcoes ul {
+.menu-principal ul {
   padding-left: 0;
 }
 
-.menu-opcoes li {
+.menu-principal li {
   display: inline-block;
   width: 5em;
 }
 
-.menu-opcoes a {
+.menu-principal a {
   color: $default-white;
   text-decoration: none;
 }
 
-.menu-opcoes a:hover {
+.menu-principal a:hover {
   text-decoration: underline;
 }
 
@@ -106,10 +131,8 @@ header .container {
 
 .destaque button {
   margin-top: 1em;
-  background: $default-color;
-  border: 0;
   padding: .6em;
-  font-size: 1.2em;
+  @include buttonsSettings();
   @include borderRadius(50px);
   @include defaultShadow();
   font-weight: bold;
@@ -148,9 +171,7 @@ header .container {
   display: inline-block;
   width: 50px;
   height: 60px;
-  text-indent: -9999px;
-  overflow: hidden;
-  background-repeat: no-repeat;
+  @include imageReplacement();
   background-position: center;
   margin: 1em 1.5em 0 0;
 }
@@ -173,7 +194,7 @@ header .container {
 
 /** Planos **/
 .planos {
-  background: #1e2c35;
+  background: $auxiliary-color;
 }
 
 .planos h2 {
@@ -229,12 +250,7 @@ header .container {
 }
 
 .plano button {
-  background: $default-color;
-  border: 0;
-  color: $default-white;
-  width: 210px;
-  height: 38px;
-  font-size: 1.2em;
+  @include buttonsSettings(210px, 38px);
   @include borderRadius();
   @include defaultShadow();
   margin-left: 2em;
@@ -267,12 +283,7 @@ header .container {
   background: url(../imagens/fundo.png);
   background-size: 25px 25px;
   opacity: .15;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
+  @include positionSettings();
 }
 
 .post-destaque,
@@ -325,12 +336,7 @@ textarea {
 
 .contato button {
   margin: 0 auto;
-  background: $default-color;
-  border: 0;
-  color: $default-white;
-  width: 210px;
-  height: 38px;
-  font-size: 1.2em;
+  @include buttonsSettings(210px, 38px);
   @include borderRadius();
   @include defaultShadow();
 }
@@ -345,23 +351,13 @@ footer::after {
   content: "";
   background: url(../imagens/fundo-rodape.png);
   opacity: .02;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
+  @include positionSettings();
 }
 
 footer::before {
   content: "";
-  background: #1e2c35;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
+  background: $auxiliary-color;
+  @include positionSettings();
 }
 
 footer .container {
@@ -412,9 +408,7 @@ footer a {
   display: block;
   width: 55px;
   height: 55px;
-  text-indent: -9999px;
-  overflow: hidden;
-  background-repeat: no-repeat;
+  @include imageReplacement();
   margin-left: 1em;
 }
 
