@@ -1,9 +1,10 @@
+// Variáveis usadas no meu SASS
 $default-color: #c24e4b;
 $auxiliary-color: #1e2c35;
 $default-white: #FFFFFF;
-$radius: 50px;
 
-@mixin borderRadius {
+// Mixins usados no meu SASS
+@mixin borderRadius ($radius: 0.3em) {
     -webkit-border-radius: $radius;
     border-radius: $radius;
 }
@@ -109,7 +110,7 @@ header .container {
   border: 0;
   padding: .6em;
   font-size: 1.2em;
-  @include borderRadius();
+  @include borderRadius(50px);
   @include defaultShadow();
   font-weight: bold;
 }
