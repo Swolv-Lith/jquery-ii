@@ -1,4 +1,17 @@
 // Variáveis usadas no meu SASS
-$default-color: #c24e4b;
-$auxiliary-color: #1e2c35;
+$default-color: darken(#c24e4b, 0);
+// darken deixa a cor mais escura e o segundo parâmetro é aceito diretamente como porcentagem
+$auxiliary-color: lighten(#1e2c35, 0);
+// lighten deixa a cor mais clara, ambos os comandos preservam a cor original
 $default-white: #FFFFFF;
+
+
+//$default-color: adjust-hue(#c24e4b, 30deg);
+//O comando adjust-hue usa degrees no lugar de %
+//a cor atingida foi um laranja.
+
+//$default-color: saturate(#c24e4b, 30%);
+//O comando de saturar deu à cor um efeito mais vivo
+
+// $default-color: complement(#c24e4b);
+// O comando complement altera a cor, e a cor obtida foi um azul ciano
