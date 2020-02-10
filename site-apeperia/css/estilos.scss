@@ -1,6 +1,8 @@
 $sprite-spacing: 5px;
+$plataforms-spacing: 20px;
 // variável atrelada ao sprite, onde altera o espaçamento das imgs
 @import 'sprite/*.png';
+@import 'plataforms/*.png';
 
 @import 'helpers/variaveis';
 @import 'helpers/mixins';
