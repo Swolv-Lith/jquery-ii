@@ -48,4 +48,16 @@ header {
       text-decoration: underline;
     }
   }
+
+  @media #{$mq-mobile} {
+      position: static;
+      display: block;
+      text-align: center;
+      width: auto;
+
+    li {
+      margin: .4em;
+      width: auto;
+    }
+  }
 }

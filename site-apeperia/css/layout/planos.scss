@@ -55,7 +55,7 @@
   .plano button {
     @include buttonsSettings(210px, 38px);
     @include borderRadius();
-    @extend %defaultShadow;
+    @include box-shadow(black 0 2px 5px); // usando compass
     margin-left: 2em;
   }
   

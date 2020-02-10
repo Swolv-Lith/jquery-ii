@@ -7,6 +7,9 @@
 form {
   margin: 0 auto;
   width: 50%;
+  @media #{$mq-mobile} {
+    width: auto;
+    }
 }
 
 .contato input,
@@ -22,5 +25,5 @@ textarea {
   margin: 0 auto;
   @include buttonsSettings(210px, 38px);
   @include borderRadius();
-  @extend %defaultShadow;
+  @include box-shadow(black 0 2px 5px); // usando compass
 }

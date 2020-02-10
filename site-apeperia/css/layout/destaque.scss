@@ -6,6 +6,11 @@
     color: $default-white;
     height: 330px;
     padding-top: 10em;
+
+    @media #{$mq-mobile} {
+        font-size: 14px;
+        height: 250px;
+      }
   }
   
   .destaque p {
@@ -27,7 +32,7 @@
     margin-top: 1em;
     padding: .6em;
     @include buttonsSettings();
-    @include borderRadius(50px);
-    @extend %defaultShadow;
+    @include border-radius(50px); // usando compass
+    @include box-shadow(black 0 2px 5px); // usando compass
     font-weight: bold;
   }
