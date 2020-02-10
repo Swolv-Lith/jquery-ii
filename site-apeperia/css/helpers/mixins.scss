@@ -4,17 +4,6 @@
     border-radius: $radius;
   }
   
-  @mixin defaultShadow {
-    -webkit-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
-  }
-  
-  @mixin imageReplacement {
-    text-indent: -9999px;
-    overflow: hidden;
-    background-repeat: no-repeat;
-  }
-  
   @mixin buttonsSettings ($width: auto, $height: auto){
     background: $default-color;
     border: 0;
@@ -31,5 +20,17 @@
     right: $value;
     position: absolute;
     z-index: -1;
+  }
+
+  // Placeholders usados no meu SASS
+  %defaultShadow {
+    -webkit-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
+  }
+
+%imageReplacement {
+    text-indent: -9999px;
+    overflow: hidden;
+    background-repeat: no-repeat;
   }
   

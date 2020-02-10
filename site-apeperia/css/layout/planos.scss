@@ -55,7 +55,7 @@
   .plano button {
     @include buttonsSettings(210px, 38px);
     @include borderRadius();
-    @include defaultShadow();
+    @extend %defaultShadow;
     margin-left: 2em;
   }
   

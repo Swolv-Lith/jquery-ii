@@ -28,6 +28,6 @@
     padding: .6em;
     @include buttonsSettings();
     @include borderRadius(50px);
-    @include defaultShadow();
+    @extend %defaultShadow;
     font-weight: bold;
   }
