@@ -10,3 +10,26 @@ header {
   header .container {
     position: relative;
   }
+  // Recurso de aninhamento
+/** Menu Principal **/
+  .menu-principal {
+  position: absolute;
+  right: 0;
+  top: -.5em;
+  font-size: 1.2em;
+  font-weight: lighter;
+  ul {
+    padding-left: 0;
+  }
+  li {
+    display: inline-block;
+    width: 5em;
+  }
+  a {
+    color: $default-white;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
