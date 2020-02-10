@@ -1,3 +1,8 @@
+.sprite-sprite {
+  background-image: url('/imagens/sprite-sed99d15b73.png');
+  background-repeat: no-repeat;
+}
+
 .plataformas li, .social li a {
   text-indent: -9999px;
   overflow: hidden;
