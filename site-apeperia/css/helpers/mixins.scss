@@ -23,6 +23,7 @@
   }
 
   // Placeholders usados no meu SASS
+  // Se não houver parâmetros para serem passados, usa-se o placehoder
   %defaultShadow {
     -webkit-box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
     box-shadow: 0 2px 6.65px 0.35px rgba(0, 0, 0, 0.3);
@@ -33,4 +34,8 @@
     overflow: hidden;
     background-repeat: no-repeat;
   }
-  
+
+  // Com o mixin o código dentro dele é copiado via @include onde for chamado, além de suportar argumentos, semelhante a função do JS. Já com o placeholder, não é possível passar argumentos, mas no lugar de copiar código pelo arquivo .css compilado, a partir do comando @extend criamos um atalho no .css para abrigar esse trecho de código uma única vez.
+  // podemos ainda chamar qualquer regra CSS no @extend
+  // ex.: .erro { background: #f00; } .alerta { border-radius: 3px; @extend .erro;}
+  // A compilação fica: .erro, .alerta {background: #f00; } .alerta { border-radius: 3px; }

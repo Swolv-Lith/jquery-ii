@@ -4,8 +4,6 @@ $default-color: darken(#c24e4b, 0);
 $auxiliary-color: lighten(#1e2c35, 0);
 // lighten deixa a cor mais clara, ambos os comandos preservam a cor original
 $default-white: #FFFFFF;
-
-
 //$default-color: adjust-hue(#c24e4b, 30deg);
 //O comando adjust-hue usa degrees no lugar de %
 //a cor atingida foi um laranja.
@@ -15,3 +13,10 @@ $default-white: #FFFFFF;
 
 // $default-color: complement(#c24e4b);
 // O comando complement altera a cor, e a cor obtida foi um azul ciano
+
+$breakpoint: 980px;
+
+$mq-mobile: "(max-width: 980px)";
+// Para o @media chamar isso como uma variável utiliza-se a sintaxe #{$mq-mobile}
+
+
