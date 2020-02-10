@@ -4,7 +4,7 @@
 }
 
 .plataforms-sprite, .plataforms-logo-android, .plataforms-logo-apple, .plataforms-logo-blackberry, .plataforms-logo-windows {
-  background-image: url('../imagens/plataforms-s70f905d39b.png');
+  background-image: url('../imagens/plataforms-sb29f1412cf.png');
   background-repeat: no-repeat;
 }
 
@@ -606,15 +606,15 @@ header .container {
 }
 
 .plataforms-logo-apple {
-  background-position: 0 -80px;
+  background-position: 0 -70px;
 }
 
 .plataforms-logo-blackberry {
-  background-position: 0 -161px;
+  background-position: 0 -141px;
 }
 
 .plataforms-logo-windows {
-  background-position: 0 -226px;
+  background-position: 0 -196px;
 }
 
 /** Planos **/
