@@ -1,0 +1,26 @@
+/** Contato **/
+.contato input,
+.contato button {
+  display: block;
+}
+
+form {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.contato input,
+textarea {
+  width: 100%;
+  margin-bottom: .8em;
+  padding: 4px 8px;
+  @include borderRadius();
+  border: 2px solid #ccc;
+}
+
+.contato button {
+  margin: 0 auto;
+  @include buttonsSettings(210px, 38px);
+  @include borderRadius();
+  @include defaultShadow();
+}

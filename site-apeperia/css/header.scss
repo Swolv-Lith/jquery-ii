@@ -1,0 +1,12 @@
+/** Header **/
+header {
+    border-top: 5px solid $default-color;
+    background: rgba(30, 44, 53, 0.8);
+    height: 90px;
+    width: 100%;
+    position: absolute;
+  }
+  
+  header .container {
+    position: relative;
+  }
