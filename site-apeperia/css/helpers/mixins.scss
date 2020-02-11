@@ -22,6 +22,11 @@
     z-index: -1;
   }
 
+  @mixin returnWitdh($multiplier){
+   width: $multiplier * $default-font-size; 
+   // pode ser passado tanto como @include returnWidth(2), como propriedade de width: returnWidth(2)
+  }
+
   // Placeholders usados no meu SASS
   // Se não houver parâmetros para serem passados, usa-se o placehoder
   %defaultShadow {
@@ -40,6 +45,13 @@
   // ex.: .erro { background: #f00; } .alerta { border-radius: 3px; @extend .erro;}
   // A compilação fica: .erro, .alerta {background: #f00; } .alerta { border-radius: 3px; }
 
+  // Functions no sass
+  @function returnCalc($multiplier){
+    @return $multiplier * $default-font-size; 
+  }
+  @function calculathor(){
+    @return (15 + 5 * 2);
+  }
   //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
   @import "compass/css3";
   @import "compass/utilities";

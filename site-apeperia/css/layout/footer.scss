@@ -18,7 +18,8 @@ footer {
   }
   
   footer .container {
-    padding-top: 3em;
+    padding-top: 3*$default-font-size; // a medida em é 3 * o tamanho padrão do font, seria a solução para compatibilidade com IE8/9/10
+    // nota o CSS hj tem sup pra conta calc()
     height: 6.5em;
     position: relative;
   }
